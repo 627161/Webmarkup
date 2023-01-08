@@ -1,0 +1,293 @@
+html{
+	background-color: #9DE0FB;
+}
+
+a:visited{
+    color: #FC9200;
+}
+
+a:link{
+    color: #A900FC;
+}
+a:active{
+    color: #FC00D1;
+}
+a:hover{
+    color: #FC00D1;
+}
+
+#logo{
+	width: 300px;
+	height: auto;
+	border: 3px solid double #006CFF;
+}
+
+body{
+    width: 1800px;
+}
+
+.images{
+	float: right;
+	width: 250px;
+	clear: both;
+	height: auto;
+	margin-right: 10px;
+	border: 3px solid #000;
+	margin-top: 10px;
+}
+
+#article{
+	clear: both;
+	height: 800px;
+	flex-basis:65%;
+	flex-grow:1;
+	flex-shrink:0;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	text-indent: 50px;
+	background-color: #FFFB83;
+	border: 3px solid #FF0000;
+	letter-spacing: 1px;
+    word-spacing: 7px;
+	line-height: 17px;
+}
+
+h2{
+	strong;
+}
+
+nav{
+	background-color: #97FFDB;
+	margin-bottom: 10px;
+	border: 3px double #147B21;
+}
+	
+video{
+	width: 550px;
+	height: auto;
+	margin-bottom:7px;
+	margin-top:7px;
+	border: 3px solid #395EAD;
+}
+
+#nikelogo{
+	float: left;
+	width: 150px;
+	clear: both;
+	height: 100px;
+	margin-left: 10px;
+	border: 3px solid #000;
+	margin-top: 10px;
+}
+
+#nike{
+	height: 50px;
+	background-color: #97FFDB;
+	border: 3px solid #147B21;
+	clear: both;
+}
+
+#subtitle{
+	background-color: #97FFDB;
+	border: 3px solid #147B21;
+	border-width: 5px;
+	clear: both ;
+}
+
+h1{
+	padding-left: 10px;
+}
+
+.flexdoc{
+	width: 1500px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer{
+	background-color: #969696;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	border: 2px; 
+    border-style: double;
+    border-color: #000;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+u li
+
+#aside1{
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	background-color: #A900FC;
+	border: 3px solid #FA4C47;
+	border-width: 5px;
+	margin-left:20px;
+	padding: 8px;
+	
+}
+
+/*the second aside is for the asides outside of the index*/
+
+#aside2{
+	padding: 30px;
+	float: left;
+}
+
+th, td {
+  padding: 15px;
+}
+	
+	
+.cookies{
+  position: fixed;
+  background-color: #FFF;
+  color: #FA0;
+  opacity: 50%;
+  width: 25%;
+  bottom: 0px;
+  right: 0px;
+  height: 150px;
+  z-index: 9999;
+  text-align: left;
+  word-spacing: 8px;
+  letter-spacing:2px
+}
+
+#grid > article
+{
+    border: solid 4px #757575;
+    padding: 15px;
+	background-color: #D8D6D6;
+}
+
+#grid
+{
+    
+    display: grid;
+	border: solid 4px #757575;
+    padding: 15px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+	background-color: #545454;
+	 grid-template-columns: auto auto auto auto;
+}
+
+#company
+{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+#consumer{
+    grid-row: 1/3;
+    
+}
+
+#copyright{
+    margin-left: 50px;
+	clear: both;
+}
+
+
+@media screen and (max-width: 480px)
+{
+    
+
+    .flexdoc{
+        width: 470px;
+    }
+	
+	video {
+    width:470px;
+    height: auto;
+    }
+
+    body {
+        width: 470px;
+    }
+
+    body.product{
+        background-color: #35FA00
+    }
+    #articles{
+        flex-basis: 100%;
+        background-color: #35FA00;
+    }
+
+    #aside.index{
+        flex-basis: 100%;
+        order: 1;
+    }
+	
+	#consumer{
+        display: none;
+    }
+    #future{
+        display: none;
+    }
+
+    #aside{
+    flex-basis: 50%;
+}
+}
+
+@media screen and (min-width: 1280px)
+{
+
+    
+    .flexdoc{
+        width: 1800px;
+    }
+	
+	video {
+    width:800px;
+    }
+
+    body.product{
+        background-color: #088BB1
+    }
+
+    body.index{
+        width: 1800px;
+
+    }
+ 
+    #articles{
+        background-color: #088BB1;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px)
+{
+    
+
+    .flexdoc{
+        width: 1000px;
+    }
+
+	video {
+    width:700px;
+    }
+
+    body{
+        width: 1000px;
+    }
+
+    body.product{
+        background-color: #8853F0;
+    }
+	
+    #articles{
+        flex-basis: 100%;
+        background-color: #8853F0;
+    }
+
+    #aside.index{
+        flex-basis: 100%;
+        order: 1;
+    }
+}
